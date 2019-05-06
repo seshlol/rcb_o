@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<h3>Зарегистрироваться</h3>
+<form action="/" method="post">
+    <div>
+        <div>
+            <label>
+                Имя<span class="req">*</span>
+                <input type="username" required autocomplete="off"/>
+            </label>
+        </div>
+    </div>
+    <div>
+        <label>
+            Почта<span class="req">*</span>
+            <input type="email" required autocomplete="off"/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Пароль<span class="req">*</span>
+            <input type="password" required autocomplete="off"/>
+        </label>
+    </div>
+    <button type="submit">
+        Готово
+    </button>
+</form>
+<hr>
+<h3>Войти</h3>
+<form action="/" method="post">
+    <div>
+        <label>
+            Имя/Почта<span class="req">*</span>
+            <input type="email" required autocomplete="off"/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Пароль<span class="req">*</span>
+            <input type="password" required autocomplete="off"/>
+        </label>
+    </div>
+    <button type="submit">
+        Готово
+    </button>
+</form>
+</body>
+</html>
