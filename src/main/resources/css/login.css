@@ -1,0 +1,47 @@
+body {
+    font-family: "Lucida Console", monospace;
+    font-size: 18px;
+}
+
+.flex-container {
+    width: 52%;
+    height: 33%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    border: 1.4px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-around;
+}
+
+form {
+    width: 45%;
+}
+
+button {
+    font-family: "Lucida Console", monospace;
+    border-radius: 4px;
+    background: #0040FF;
+    color: #FFFFFF;
+    border: 1px solid #0040FF;
+    font-size: 16px;
+    padding: 6px;
+    float: right;
+}
+
+form > div {
+    margin: 16px;
+}
+
+input {
+    height: 20px;
+    float: right;
+    border-radius: 4px;
+}
+
+

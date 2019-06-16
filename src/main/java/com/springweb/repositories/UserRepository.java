@@ -1,6 +1,6 @@
-package com.seshlol.repositories;
+package com.springweb.repositories;
 
-import com.seshlol.entities.User;
+import com.springweb.entities.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

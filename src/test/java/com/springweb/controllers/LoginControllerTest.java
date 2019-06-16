@@ -1,4 +1,4 @@
-package com.seshlol.controllers;
+package com.springweb.controllers;
 
 import static org.hamcrest.Matchers.containsString;
 import static

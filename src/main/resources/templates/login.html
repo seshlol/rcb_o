@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Вход</title>
     <link rel="shortcut icon" type="image/ico" href="../static/favicon.ico"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
 </head>
 <body>
-<h4>Регистрация</h4>
-<form action="/" method="post">
-    <div>
+<div class="flex-container">
+    <form class="flex-item" action="/home" method="post">
         <div>
             <label>
-                Имя<span class="req">*</span>
-                <input type="username" required autocomplete="off"/>
+                <span>Имя*</span>
+                <input type="text" required autocomplete="off"/>
             </label>
         </div>
-    </div>
-    <div>
-        <label>
-            Почта<span class="req">*</span>
-            <input type="email" required autocomplete="off"/>
-        </label>
-    </div>
-    <div>
-        <label>
-            Пароль<span class="req">*</span>
-            <input type="password" required autocomplete="off"/>
-        </label>
-    </div>
-    <button type="submit">
-        Принять
-    </button>
-</form>
-<hr>
-<h4>Вход</h4>
-<form action="/home" method="post">
-    <div>
-        <label>
-            Имя/Почта<span class="req">*</span>
-            <input type="email" required autocomplete="off"/>
-        </label>
-    </div>
-    <div>
-        <label>
-            Пароль<span class="req">*</span>
-            <input type="password" required autocomplete="off"/>
-        </label>
-    </div>
-    <button type="submit">
-        Принять
-    </button>
-</form>
+        <div>
+            <label>Почта*</span>
+                <input type="email" required autocomplete="off"/>
+            </label>
+        </div>
+        <div>
+            <label>
+                <span>Пароль*</span>
+                <input type="password" required autocomplete="off"/>
+            </label>
+        </div>
+        <div>
+        <button type="submit">
+            Регистрация
+        </button>
+        </div>
+    </form>
+    <form class="flex-item" action="/home" method="post">
+        <div>
+            <label>
+                <span>Имя/Почта*</span>
+                <input type="email" required autocomplete="off"/>
+            </label>
+        </div>
+        <div>
+            <label>
+                <span>Пароль*</span>
+                <input type="password" required autocomplete="off"/>
+            </label>
+        </div>
+        <div>
+        <button type="submit">
+            Вход
+        </button>
+        </div>
+    </form>
+</div>
 </body>
 </html>

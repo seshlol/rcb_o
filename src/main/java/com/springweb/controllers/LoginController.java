@@ -1,6 +1,6 @@
-package com.seshlol.controllers;
+package com.springweb.controllers;
 
-import com.seshlol.repositories.UserRepository;
+import com.springweb.repositories.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

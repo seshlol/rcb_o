@@ -1,4 +1,4 @@
-package com.seshlol.entities;
+package com.springweb.entities;
 
 import lombok.Data;
 import lombok.NonNull;
