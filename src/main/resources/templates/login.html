@@ -5,11 +5,10 @@
     <title>Вход</title>
     <link rel="shortcut icon" type="image/ico" href="../static/favicon.ico"/>
     <link rel="stylesheet" href="../css/login.css">
-    <script src="../js/login.js"></script>
 </head>
 <body>
 <div class="flex-container">
-    <form class="flex-item" action="/home" method="post">
+    <form action="/home" method="post">
         <div>
             <label>
                 <span>Имя*</span>
@@ -17,7 +16,8 @@
             </label>
         </div>
         <div>
-            <label>Почта*</span>
+            <label>
+                <span>Почта*</span>
                 <input type="email" required autocomplete="off"/>
             </label>
         </div>
@@ -28,12 +28,10 @@
             </label>
         </div>
         <div>
-        <button type="submit">
-            Регистрация
-        </button>
+            <button type="submit">Регистрация</button>
         </div>
     </form>
-    <form class="flex-item" action="/home" method="post">
+    <form action="/home" method="post">
         <div>
             <label>
                 <span>Имя/Почта*</span>
@@ -47,11 +45,10 @@
             </label>
         </div>
         <div>
-        <button type="submit">
-            Вход
-        </button>
+            <button type="submit">Вход</button>
         </div>
     </form>
 </div>
+<script src="../js/login.js"></script>
 </body>
 </html>

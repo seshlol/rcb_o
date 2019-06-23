@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #A4A4A4;
+    color: #D8D8D8;
+}
+
+header, .options {
+    width: 100%;
+    height: 12%;
+    background-color: #848484;
+    margin-bottom: 0.4%;
+}
+
+.contacts {
+    width: 24.8%;
+    height: 100%;
+    display: inline-block;
+    background-color: #848484;
+
+}
+
+.info {
+    float: right;
+    width: 74.8%;
+    height: 100%;
+    display: inline-block;
+    background-color: #848484;
+
+}
+
+.contact {
+    width: 98%;
+    height: 12%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    background-color: #424242;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    justify-content: space-around;
+    margin: 4px;
+}
+
+.contact > .photo {
+    width: 22%;
+    height: 99%;
+    display: inline-block;
+}
+
+.contact > .fio {
+    width: 78%;
+    float: top;
+    display: inline-block;
+
+}
+
+.photo > img {
+    max-height: 100%;
+}
+
+.contact > * {
+    margin: 0;
+    padding: 0;
+}

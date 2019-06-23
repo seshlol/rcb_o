@@ -1,34 +1,40 @@
 body {
-    font-family: "Lucida Console", monospace;
-    font-size: 18px;
+    font-family: "Courier New", sans-serif;
+    font-size: 16px;
+    color: #E6E6E6;
+    background-color: #A4A4A4;
 }
 
 .flex-container {
-    width: 52%;
-    height: 33%;
+    width: 44%;
+    height: 40%;
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: flex-start;
-    border: 1.4px solid #000000;
-    border-radius: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    background-color: #848484;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     justify-content: space-around;
 }
 
 form {
-    width: 45%;
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+
+    /*border: 1px solid black;*/
 }
 
 button {
-    font-family: "Lucida Console", monospace;
-    border-radius: 4px;
-    background: #0040FF;
-    color: #FFFFFF;
-    border: 1px solid #0040FF;
+    width: 50%;
+    font-family: "Courier New", monospace;
+    background: #FE9A2E;
+    color: #E6E6E6;
+    border: 1px solid #FE9A2E;
     font-size: 16px;
     padding: 6px;
     float: right;
@@ -36,12 +42,21 @@ button {
 
 form > div {
     margin: 16px;
+
+    /*border: 1px solid black;*/
 }
 
 input {
+    width: 60%;
     height: 20px;
     float: right;
-    border-radius: 4px;
+    border-radius: 2px;
+
+    /*border: 1px solid black;*/
+}
+
+label > span {
+    /*border: 1px solid black;*/
 }
 
 
