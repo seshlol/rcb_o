@@ -23,10 +23,8 @@ body {
 
 form {
     width: 50%;
-    padding: 0px;
-    margin: 0px;
-
-    /*border: 1px solid black;*/
+    padding: 0;
+    margin: 0;
 }
 
 button {
@@ -42,8 +40,6 @@ button {
 
 form > div {
     margin: 16px;
-
-    /*border: 1px solid black;*/
 }
 
 input {
@@ -51,12 +47,6 @@ input {
     height: 20px;
     float: right;
     border-radius: 2px;
-
-    /*border: 1px solid black;*/
-}
-
-label > span {
-    /*border: 1px solid black;*/
 }
 
 

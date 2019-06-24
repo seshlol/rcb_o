@@ -7,7 +7,9 @@ html, body {
 
 body {
     background-color: #A4A4A4;
-    color: #D8D8D8;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 14px;
+    color: #E6E6E6;
 }
 
 header, .options {
@@ -41,7 +43,6 @@ header, .options {
     display: flex;
     -webkit-justify-content: flex-start;
     background-color: #424242;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     justify-content: space-around;
     margin: 4px;
 }
@@ -49,21 +50,25 @@ header, .options {
 .contact > .photo {
     width: 22%;
     height: 99%;
-    display: inline-block;
 }
 
-.contact > .fio {
+.contact > .description {
     width: 78%;
-    float: top;
-    display: inline-block;
-
+    height: 100%;
+    display: -webkit-flex;
+    -webkit-justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .photo > img {
     max-height: 100%;
 }
 
-.contact > * {
-    margin: 0;
-    padding: 0;
+progress {
+    height: 20%;
+    width: 100%;
+    border-radius: 2px;
 }
