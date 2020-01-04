@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/img/misc/favicon.ico" th:href="@{/img/misc/favicon.ico}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play&display=swap">
+    <link rel="stylesheet" href="../static/css/login/login.css" th:href="@{/css/login/login.css}">
+    <link rel="stylesheet" href="../static/css/misc/utils.css" th:href="@{/css/misc/utils.css}">
+    <link rel="stylesheet" href="../static/css/misc/button.css" th:href="@{/css/misc/button.css}">
+    <script type="text/javascript" src="../static/js/login/tabSwitcher.js"
+            th:src="@{/js/login/tabSwitcher.js}" defer></script>
+</head>
+<body>
+<div class="box">
+
+    <div class="tabs">
+        <button class="signup enabled">Sign up</button>
+        <button class="signin disabled">Sign in</button>
+        <button class="reset disabled">Forgot password</button>
+    </div>
+
+    <form method="post">
+        <div class="input-block">
+            <input type="text" placeholder="login" name="login" autocomplete="off"/>
+            <input type="password" placeholder="password" name="password" autocomplete="off"/>
+            <input type="password" placeholder="confirm password" name="confirmPassword" autocomplete="off"/>
+            <input type="text" placeholder="secret question" name="question" autocomplete="off"/>
+            <input type="text" placeholder="answer to a question" name="answer" autocomplete="off"/>
+        </div>
+        <div class="bottom-buttons">
+            <button class="empty left" type="button" value="back"><span>Back</span></button>
+            <button class="filled right" type="submit" value="reset"><span>Accept</span></button>
+        </div>
+    </form>
+
+    <form class="hidden" method="post">
+        <div class="input-block">
+            <input type="text" placeholder="login" name="login" autocomplete="off"/>
+            <input type="password" placeholder="password" name="password" autocomplete="off"/>
+        </div>
+        <div class="bottom-buttons">
+            <button class="empty left" type="button" value="back"><span>Back</span></button>
+            <button class="filled right" type="submit" value="reset"><span>Accept</span></button>
+        </div>
+    </form>
+
+    <form class="hidden" method="post">
+        <div class="input-block">
+            <input type="text" placeholder="login" name="login" autocomplete="off"/>
+        </div>
+        <div class="bottom-buttons">
+            <button class="empty left" type="button" value="back"><span>Back</span></button>
+            <button class="filled right" type="submit" value="reset"><span>Accept</span></button>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>

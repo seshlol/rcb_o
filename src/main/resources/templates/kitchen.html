@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitchen</title>
+    <link rel="shortcut icon" type="image/ico" href="../static/img/misc/favicon.ico" th:href="@{/img/misc/favicon.ico}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play&display=swap">
+    <link rel="stylesheet" href="../static/css/kitchen/ingredient.css" th:href="@{/css/kitchen/ingredient.css}">
+    <link rel="stylesheet" href="../static/css/misc/utils.css" th:href="@{/css/misc/utils.css}">
+    <link rel="stylesheet" href="../static/css/misc/button.css" th:href="@{/css/misc/button.css}">
+    <script src="../static/js/kitchen/searchIngredient.js" type="module"
+            th:src="@{/js/kitchen/searchIngredient.js}" defer></script>
+    <script src="../static/js/kitchen/suggestIngredient.js" type="module"
+            th:src="@{/js/kitchen/suggestIngredient.js}" defer></script>
+</head>
+<body>
+<div class="options">
+
+</div>
+
+<div class="workspace">
+    <div class="ingredient">
+        <form class="search" method="get" action="">
+            <input type="text" placeholder="ingredient">
+            <button class="filled right" type="submit">
+                <span>
+                    Search
+                </span>
+                <div class="loading-animation hidden">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+        </form>
+        <div class="list window">
+            <ul>
+                <template>
+                    <li>
+                        <img>
+                        <div>
+                            <strong></strong>
+                            <span></span>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </div>
+        <div class="info window">
+            <div class="box hidden">
+                <img class="icon">
+                <div>
+                    <strong class="name"></strong>
+                    <p class="carbohydrates"></p>
+                    <p class="proteins"></p>
+                    <p class="fats"></p>
+                    <p class="calories"></p>
+                </div>
+                <p class="text"></p>
+            </div>
+        </div>
+        <form class="suggest" method="post" action="">
+            <input type="text" placeholder="ingredient">
+            <button class="empty right" type="submit">
+                <span>
+                    Suggest
+                </span>
+                <div class="loading-animation hidden">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+        </form>
+    </div>
+
+    <div class="action">
+    </div>
+    <div class="result">
+    </div>
+    <div class="recipe">
+
+    </div>
+</div>
+</body>
+</html>

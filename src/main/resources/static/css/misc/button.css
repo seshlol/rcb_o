@@ -1,0 +1,87 @@
+button, input:focus {
+    outline: none;
+}
+
+.filled {
+    color: #FFFFFF;
+    background: #2E64FE;
+    border: 1px solid #2E64FE;
+}
+
+.filled:hover {
+    background: #5882FA;
+    border: #5882FA;
+}
+
+.empty {
+    color: #2E64FE;
+    background: #FFFFFF;
+    border: 1px solid #2E64FE;
+}
+
+.empty:hover {
+    background: #CED8F6;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.loading-animation {
+    width: 45px;
+    margin: auto;
+}
+
+.loading-animation > div {
+    float: left;
+    height: 8px;
+    margin-left: 4px;
+    width: 8px;
+    animation-duration: 0.9775s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.filled > div > div {
+    animation-name: circles-filled;
+}
+
+.empty > div > div {
+    animation-name: circles-empty;
+}
+
+.loading-animation div:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.loading-animation div:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.loading-animation div:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes circles-filled {
+    0% {
+    }
+    50% {
+        background: #FFFFFF;
+    }
+    100% {
+    }
+}
+
+@keyframes circles-empty {
+    0% {
+    }
+    50% {
+        background: #2E64FE;
+    }
+    100% {
+    }
+}
