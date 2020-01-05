@@ -16,7 +16,7 @@ import setPlaceholderMessage from '../misc/setPlaceholderDefinedByStatus.js';
             e.preventDefault();
             const suggestName = suggestInput.value;
 
-            changeFormState(suggestButton, suggestInput, WAITING_FOR_RESPONSE);
+            changeFormState(suggestButton, suggestInput, WAITING_FOR_RESPONSE, 2000);
             fetchWithTimeout(window.location.href + '/ingredients', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json; charset=utf-8'},

@@ -32,7 +32,7 @@ import setPlaceholderDefinedByHttpStatus from '../misc/setPlaceholderDefinedBySt
             }
 
             const search = searchInput.value;
-            changeFormState(searchButton, searchInput, WAITING_FOR_RESPONSE);
+            changeFormState(searchButton, searchInput, WAITING_FOR_RESPONSE, 2000);
             let jsonData;
             fetchWithTimeout(window.location.href + `/ingredients?name=${encodeURIComponent(search)}`, {
                 method: 'GET',
@@ -61,8 +61,8 @@ import setPlaceholderDefinedByHttpStatus from '../misc/setPlaceholderDefinedBySt
                     searchInput.placeholder = 'unexpected error';
                 })
                 .then(() => {
-                    const timeout = (jsonData) ? 0 : 2000;
-                    changeFormState(searchButton, searchInput, INGREDIENT_TAG, timeout);
+                    // const timeout = (jsonData) ? 0 : 2000;
+                    changeFormState(searchButton, searchInput, INGREDIENT_TAG, 2000);
                 })
         });
 

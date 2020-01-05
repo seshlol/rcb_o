@@ -9,7 +9,7 @@ export default (button, input, placeholderValue, timeout = 0) => {
         }, timeout);
         setTimeout(() => {
             button.disabled = false;
-        }, 1000)
+        }, timeout)
     } else {
         button.disabled = true;
         button.querySelector('span').classList.add('hidden');

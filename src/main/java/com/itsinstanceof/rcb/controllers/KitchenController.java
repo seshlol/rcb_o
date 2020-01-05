@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Slf4j
 @RestController
 @RequestMapping("/kitchen")
 public class KitchenController {
@@ -40,7 +39,6 @@ public class KitchenController {
             }
             return ResponseEntity.status(HttpStatus.OK).body(ingredientsToSend);
         } catch (Exception e) {
-            log.error(e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
@@ -65,7 +63,6 @@ public class KitchenController {
                 return ResponseEntity.status(HttpStatus.ALREADY_REPORTED).build();
             }
         } catch (Exception e) {
-            log.error(e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
