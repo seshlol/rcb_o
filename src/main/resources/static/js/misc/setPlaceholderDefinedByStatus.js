@@ -2,10 +2,10 @@
 
 import httpStatus from "./httpStatusToMessage.js";
 
-export default (status, input) => {
-    const message = httpStatus.get(status);
-    if (message !== undefined) {
-        input.placeholder = message;
+export default (statusCode, input) => {
+    const statusMessage = httpStatus[`STATUS_CODE_${statusCode}`];
+    if (statusMessage !== undefined) {
+        input.placeholder = statusMessage;
     } else {
         throw new Error('unexpected error');
     }
